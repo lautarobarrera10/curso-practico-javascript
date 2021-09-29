@@ -5,5 +5,5 @@ Proyecto trabajado a partir de curso práctico de JavaScript.
 
 - Primer paso: Definir las fórmulas.
 - Segundo paso: Implementar las fórmulas en JavaScript.
-- Tercer paso: Crear funciones
-- Cuarto paso: Integrar JS con HTML
+- Tercer paso: Crear funciones.
+- Cuarto paso: Integrar JS con HTML.
