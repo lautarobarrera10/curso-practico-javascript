@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras geométricas</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 768px)"/>
 </head>
 <body>
     <header>
         <h1>Geometry Crack</h1>
         <p>Tu aliado geométrico</p>
     </header>
+    <main>
     <section class="box">
         <h2 class="box__title">Cuadrado</h2>
         <p class="box__description">Calcula las medidas de un cuadrado</p>
@@ -44,49 +46,55 @@
         <h2 class="box__title">Triángulo</h2>
         <p class="box__description">Calcula las medidas de un triángulo</p>
         <img class="box__image" src="./images/triangulo.png" alt="triangulo blanco">
-        <h3 class="box__subtitle">Perímetro</h3>
-        <label class="box__label" for="trianguloLado1">
-            <p>Ingresa el tamaño de los lados del triángulo:</p>
-        </label>
-        <div class="tamaño">
-            <input placeholder="Lado 1..." class="box__input box__input--medida" type="number" id="trianguloLado1">
-            <div class="medida__container">
-                <select class="medida" name="size" id="InputMedidaTriangulo">
-                    <option class="medida__option" value="mm">mm</option>
-                    <option class="medida__option" value="cm">cm</option>
-                    <option class="medida__option" value="m">m</option>
-                </select>
-                <label for="InputMedidaTriangulo">
-                    <img class="medida__flecha" src="./icons/arrow-down.png" alt="">
+        <div class="box--triangulo__container">
+            <div class="box--triangulo">
+                <h3 class="box__subtitle">Perímetro</h3>
+                <label class="box__label" for="trianguloLado1">
+                    <p>Ingresa el tamaño de los lados del triángulo:</p>
                 </label>
+                <div class="tamaño">
+                    <input placeholder="Lado 1..." class="box__input box__input--medida" type="number" id="trianguloLado1">
+                    <div class="medida__container">
+                        <select class="medida" name="size" id="InputMedidaTriangulo">
+                            <option class="medida__option" value="mm">mm</option>
+                            <option class="medida__option" value="cm">cm</option>
+                            <option class="medida__option" value="m">m</option>
+                        </select>
+                        <label for="InputMedidaTriangulo">
+                            <img class="medida__flecha" src="./icons/arrow-down.png" alt="">
+                        </label>
+                    </div>
+                </div>
+                <input placeholder="Lado 2..." class="box__input" type="number" id="trianguloLado2">
+                <input placeholder="Lado 3..." class="box__input" type="number" id="trianguloLado3">
+                <button class="box__button--secundario" type="button" onclick="calcularPerimetroTriangulo()">
+                Calcular perímetro
+                </button>
+            </div>
+            <div class="box--triangulo">
+                <h3 class="box__subtitle box__subtitle--second">Área</h3>
+                <label class="box__label" for="trianguloBase">
+                    <p>Ingresa el tamaño de un lado (base) y la altura del triángulo:</p>
+                </label>
+                <div class="tamaño">
+                    <input placeholder="Lado base..." class="box__input box__input--medida" type="number" id="trianguloBase">
+                    <div class="medida__container">
+                        <select class="medida" name="size" id="InputMedidaTriangulo2">
+                            <option class="medida__option" value="mm">mm</option>
+                            <option class="medida__option" value="cm">cm</option>
+                            <option class="medida__option" value="m">m</option>
+                        </select>
+                        <label for="InputMedidaTriangulo2">
+                            <img class="medida__flecha" src="./icons/arrow-down.png" alt="">
+                        </label>
+                    </div>
+                </div>
+                <input placeholder="Altura..." class="box__input" type="number" id="trianguloAltura">
+                <button class="box__button--terciario" type="button" onclick="calcularAreaTriangulo()">
+                    Calcular área
+                </button>
             </div>
         </div>
-        <input placeholder="Lado 2..." class="box__input" type="number" id="trianguloLado2">
-        <input placeholder="Lado 3..." class="box__input" type="number" id="trianguloLado3">
-        <button class="box__button--secundario" type="button" onclick="calcularPerimetroTriangulo()">
-            Calcular perímetro
-        </button>
-        <h3 class="box__subtitle box__subtitle--second">Área</h3>
-        <label class="box__label" for="trianguloBase">
-            <p>Ingresa el tamaño de un lado (base) y la altura del triángulo:</p>
-        </label>
-        <div class="tamaño">
-            <input placeholder="Lado base..." class="box__input box__input--medida" type="number" id="trianguloBase">
-            <div class="medida__container">
-                <select class="medida" name="size" id="InputMedidaTriangulo2">
-                    <option class="medida__option" value="mm">mm</option>
-                    <option class="medida__option" value="cm">cm</option>
-                    <option class="medida__option" value="m">m</option>
-                </select>
-                <label for="InputMedidaTriangulo2">
-                    <img class="medida__flecha" src="./icons/arrow-down.png" alt="">
-                </label>
-            </div>
-        </div>
-        <input placeholder="Altura..." class="box__input" type="number" id="trianguloAltura">
-        <button class="box__button--terciario" type="button" onclick="calcularAreaTriangulo()">
-            Calcular área
-        </button>
     </section>
     <section class="box">
         <h2 class="box__title">Círculo</h2>
@@ -118,6 +126,7 @@
             Calcular área
         </button>
     </section>
+    </main>
     <footer>
         <p>Created by <strong><a href="https://lautarobarrera.com" target="_blanck">Lautaro Barrera</a></strong></p>
     </footer>

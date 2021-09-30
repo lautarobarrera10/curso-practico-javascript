@@ -39,16 +39,27 @@ header p {
     color: #333;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .box {
     padding: 10px 0 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 40px auto 0;
+    margin: 40px 35px 0;
     width: 261px;
+    height: fit-content;
     background-color: white;
     border-radius: 14px;
     box-shadow: 0 8px 6px 0 rgba(33, 33, 33, .3);
+}
+
+.box--triangulo__container {
+    width: 224px;
 }
 
 .box__title {
