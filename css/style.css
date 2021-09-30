@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Condensed", sans-serif;;
+    font-size: 62.5%;
+    background-image: url("../images/background-mobile.png");
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: center;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 4px 4px rgba(33, 33, 33, .3);
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: #23B7FD;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.box {
+    padding: 10px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto 0;
+    width: 261px;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 8px 6px 0 rgba(33, 33, 33, .3);
+}
+
+.box__title {
+    text-align: center;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #23B7FD;
+}
+
+.box__description {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.box__image {
+    margin: 20px 0;
+}
+
+.box__subtitle {
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #23B7FD;
+}
+
+.box__subtitle--second {
+    margin-top: 20px;
+}
+
+.box__label {
+    font-size: 1.1rem;
+    width: 82%;
+}
+
+.tamaño {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box__input {
+    margin-top: 9px;
+    padding-left: 10px;
+    width: 224px;
+    height: 33px;
+    font-size: .8rem;
+    border: 1px solid rgba(33, 33, 33, .3);
+    border-radius: 16px;
+    box-shadow: 0 4px 4px 0 rgba(33, 33, 33, .3);
+    outline: none;
+}
+
+.box__input--medida {
+    width: 147px;
+}
+
+.medida__container {
+    position: relative;
+}
+
+.medida {
+    margin-top: 9px;
+    margin-left: 9px;
+    width: 68px;
+    padding: 0 16px;
+    height: 33px;
+    appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 4px 0 rgba(33, 33, 33, .3);
+    outline: none;
+}
+/* Eliminamos la fecha que por defecto aparece en el desplegable */
+.medida::-ms-expand {
+    display: none;
+}
+
+.medida__flecha {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    width: 10px;
+    display: block;
+}
+
+.box__button--primario {
+    margin-top: 9px;
+    width: 224px;
+    height: 33px;
+    font-size: .7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    background-color: #23B7FD;
+    box-shadow: 0 4px 4px 0 rgba(33, 33, 33, .3);
+}
+
+.box__button--secundario {
+    margin-top: 9px;
+    width: 224px;
+    height: 33px;
+    font-size: .7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    background-color: #5714DE;
+    box-shadow: 0 4px 4px 0 rgba(33, 33, 33, .3);
+}
+
+.box__button--terciario {
+    margin-top: 9px;
+    width: 224px;
+    height: 33px;
+    font-size: .7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    background-color: #EF6E26;
+    box-shadow: 0 4px 4px 0 rgba(33, 33, 33, .3);
+}
+
+footer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px -4px 0 0 rgba(33, 33, 33, .3);
+}
+
+footer p {
+    font-size: 1.2rem;
+}
+
+footer p strong a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #000;
+}
