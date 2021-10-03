@@ -250,6 +250,18 @@ main {
           box-shadow: 0 4px 4px 0 rgba(33, 33, 33, 0.3);
 }
 
+.resultado__text {
+  margin: 15px 0 9px;
+  color: #333333;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.resultado {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
 footer {
   margin-top: 30px;
   display: -webkit-box;

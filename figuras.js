@@ -65,7 +65,13 @@ function calcularPerimetroCuadrado() {
     const medida = inputMedida.value;
 
     const perimetro = perimetroCuadrado(valueCuadrado);
-    alert("El perímetro del cuadrado es " + perimetro + " " + medida)
+    
+    const resultadoTexto = document.getElementById("resultadoCuadradoTexto")
+    resultadoTexto.innerText = "El perímetro del cuadrado es de " ;
+
+    const resultado = document.getElementById("resultadoCuadrado")
+    resultado.innerText = perimetro + " " + medida;
+
 }
 
 function calcularAreaCuadrado() {
@@ -76,7 +82,12 @@ function calcularAreaCuadrado() {
     const medida = inputMedida.value;
 
     const area = areaCuadrado(valueCuadrado);
-    alert("El área del cuadrado es de " + area + " " + medida + "²")
+    
+    const resultadoTexto = document.getElementById("resultadoCuadradoTexto")
+    resultadoTexto.innerText = "El área del cuadrado es de " ;
+
+    const resultado = document.getElementById("resultadoCuadrado")
+    resultado.innerText = area + " " + medida + "²";
 }
 
 //Círculo
@@ -90,7 +101,12 @@ function calcularDiametroCirculo() {
     const medida = InputMedida.value;
 
     const diametro = diametroCirculo(radio);
-    alert("El diámetro del círculo es de " + diametro + " " + medida);
+    
+    const resultadoTexto = document.getElementById("resultadoCirculoTexto")
+    resultadoTexto.innerText = "El díametro del círculo es de " ;
+
+    const resultado = document.getElementById("resultadoCirculo")
+    resultado.innerText = diametro + " " + medida;
 }
 
 function calcularCircunferenciaCirculo() {
@@ -101,7 +117,12 @@ function calcularCircunferenciaCirculo() {
     const medida = InputMedida.value;
 
     const circunferencia = perimetroCirculo(radio);
-    alert("La circunferencia del círculo es de " + circunferencia + " " + medida);
+
+    const resultadoTexto = document.getElementById("resultadoCirculoTexto")
+    resultadoTexto.innerText = "La circunferencia del círculo es de " ;
+
+    const resultado = document.getElementById("resultadoCirculo")
+    resultado.innerText = circunferencia + " " + medida;
 }
 
 function calcularAreaCirculo () {
@@ -112,7 +133,12 @@ function calcularAreaCirculo () {
     const medida = InputMedida.value;
 
     const area = areaCirculo(radio);
-    alert("El área del círculo es de " + area + " " + medida + "²");
+
+    const resultadoTexto = document.getElementById("resultadoCirculoTexto")
+    resultadoTexto.innerText = "El área del círculo es de " ;
+
+    const resultado = document.getElementById("resultadoCirculo")
+    resultado.innerText = area + " " + medida + "²";
 }
 
 // Triángulo
@@ -131,7 +157,12 @@ function calcularPerimetroTriangulo() {
     const medida = InputMedida.value;
 
     const perimetro = perimetroTriangulo(lado1, lado2, lado3);
-    alert("El perímetro del triángulo es de " + perimetro + " " + medida);
+      
+    const resultadoTexto = document.getElementById("resultadoTrianguloPerimetroTexto")
+    resultadoTexto.innerText = "El perímetro del triángulo es de " ;
+
+    const resultado = document.getElementById("resultadoTrianguloPerimetro")
+    resultado.innerText = perimetro + " " + medida;
 }
 
 function calcularAreaTriangulo() {
@@ -145,7 +176,12 @@ function calcularAreaTriangulo() {
     const altura = Number(inputAltura.value);
 
     const area = areaTriangulo(altura, base);
-    alert("El área del triángulo es de " + area + " " + medida + "²");
+
+    const resultadoTexto = document.getElementById("resultadoTrianguloAreaTexto")
+    resultadoTexto.innerText = "El área del triángulo es de " ;
+
+    const resultado = document.getElementById("resultadoTrianguloArea")
+    resultado.innerText = area + " " + medida + "²";
 }
 
 function calcularAlturaTrianguloIsosceles() {
@@ -159,5 +195,10 @@ function calcularAlturaTrianguloIsosceles() {
     const medida = InputMedida.value;
 
     const altura = alturaIsosceles(ladoA, ladoB);
-    alert("La altura del triángulo isósceles es de " + altura + " " + medida)
+
+    const resultadoTexto = document.getElementById("resultadoTrianguloAlturaIsoscelesTexto")
+    resultadoTexto.innerText = "La altura del triángulo isósceles es de " ;
+
+    const resultado = document.getElementById("resultadoTrianguloAlturaIsosceles")
+    resultado.innerText = altura + " " + medida;
 }
