@@ -13,6 +13,12 @@ function areaCuadrado(lado) {
 
 //Código del triángulo
 
+// Altura de un triángulo isósceles
+function alturaIsosceles(ladoA, ladoB) {
+    const altura = Math.sqrt((ladoA ** 2) - ((ladoB / 2) ** 2));
+    return altura;
+}
+
 // Perímetro
 function perimetroTriangulo(lado1, lado2, base) {
     return lado1 + lado2 + base;
@@ -73,39 +79,6 @@ function calcularAreaCuadrado() {
     alert("El área del cuadrado es de " + area + " " + medida + "²")
 }
 
-// Triángulo
-
-function calcularPerimetroTriangulo() {
-    const inputLado1 = document.getElementById("trianguloLado1");
-    const lado1 = Number(inputLado1.value);
-
-    const inputLado2 = document.getElementById("trianguloLado2");
-    const lado2 = Number(inputLado2.value);
-
-    const inputLado3 = document.getElementById("trianguloLado3");
-    const lado3 = Number(inputLado3.value);
-
-    const InputMedida = document.getElementById("InputMedidaTriangulo")
-    const medida = InputMedida.value;
-
-    const perimetro = perimetroTriangulo(lado1, lado2, lado3);
-    alert("El perímetro del triángulo es de " + perimetro + " " + medida);
-}
-
-function calcularAreaTriangulo() {
-    const inputBase = document.getElementById("trianguloBase");
-    const base = Number(inputBase.value);
-
-    const InputMedida = document.getElementById("InputMedidaTriangulo2")
-    const medida = InputMedida.value;
-
-    const inputAltura = document.getElementById("trianguloAltura");
-    const altura = Number(inputAltura.value);
-
-    const area = areaTriangulo(altura, base);
-    alert("El área del triángulo es de " + area + " " + medida + "²");
-}
-
 //Círculo
 
 
@@ -140,4 +113,51 @@ function calcularAreaCirculo () {
 
     const area = areaCirculo(radio);
     alert("El área del círculo es de " + area + " " + medida + "²");
+}
+
+// Triángulo
+
+function calcularPerimetroTriangulo() {
+    const inputLado1 = document.getElementById("trianguloLado1");
+    const lado1 = Number(inputLado1.value);
+
+    const inputLado2 = document.getElementById("trianguloLado2");
+    const lado2 = Number(inputLado2.value);
+
+    const inputLado3 = document.getElementById("trianguloLado3");
+    const lado3 = Number(inputLado3.value);
+
+    const InputMedida = document.getElementById("InputMedidaTriangulo")
+    const medida = InputMedida.value;
+
+    const perimetro = perimetroTriangulo(lado1, lado2, lado3);
+    alert("El perímetro del triángulo es de " + perimetro + " " + medida);
+}
+
+function calcularAreaTriangulo() {
+    const inputBase = document.getElementById("trianguloBase");
+    const base = Number(inputBase.value);
+
+    const InputMedida = document.getElementById("InputMedidaTriangulo2")
+    const medida = InputMedida.value;
+
+    const inputAltura = document.getElementById("trianguloAltura");
+    const altura = Number(inputAltura.value);
+
+    const area = areaTriangulo(altura, base);
+    alert("El área del triángulo es de " + area + " " + medida + "²");
+}
+
+function calcularAlturaTrianguloIsosceles() {
+    const ladoAInput = document.getElementById("alturaIsoscelesLadoA")
+    const ladoA = Number(ladoAInput.value);
+
+    const ladoBInput = document.getElementById("alturaIsoscelesLadoB")
+    const ladoB = Number(ladoBInput.value);
+
+    const InputMedida = document.getElementById("InputMedidaTriangulo3")
+    const medida = InputMedida.value;
+
+    const altura = alturaIsosceles(ladoA, ladoB);
+    alert("La altura del triángulo isósceles es de " + altura + " " + medida)
 }

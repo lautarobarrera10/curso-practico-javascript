@@ -8,20 +8,8 @@ main {
     flex-wrap: wrap;
 }
 
-.box:nth-child(2) {
-    order: 3;
-    width: 592px;
-}
-
-.box--triangulo__container {
-    width: fit-content;
+.triangulos-container {
     display: flex;
-    justify-content: space-around;
-}
-
-.box--triangulo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 261px;
+    justify-content: center;
+    flex-wrap: wrap;
 }

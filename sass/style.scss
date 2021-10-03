@@ -68,6 +68,12 @@ main {
     box-shadow: 0 8px 6px 0 rgba(33, 33, 33, .3);
 }
 
+.box--title {
+    padding: 10px 0;
+    width: 79%;
+    min-width: 261px;
+}
+
 .box--triangulo__container {
     width: 224px;
 }
@@ -90,7 +96,7 @@ main {
 
 .box__subtitle {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     color: $color-primario;
 }
@@ -101,7 +107,7 @@ main {
 
 .box__label {
     font-size: 1.1rem;
-    width: 82%;
+    width: 85%;
 }
 
 .tamaño {
