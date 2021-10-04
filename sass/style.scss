@@ -51,8 +51,8 @@ header p {
 
 main {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .box {
@@ -65,17 +65,27 @@ main {
     height: fit-content;
     background-color: $color-claro;
     border-radius: 14px;
-    box-shadow: 0 8px 6px 0 rgba(33, 33, 33, .3);
+    box-shadow: 0 8px 6px 0 rgba(143, 126, 126, 0.3);
+}
+
+.triangulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.triangulos-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .box--title {
+    margin: 40px 0 0;
+    width: 80%;
+    max-width: 921px;
     padding: 10px 0;
-    width: 79%;
     min-width: 261px;
-}
-
-.box--triangulo__container {
-    width: 224px;
 }
 
 .box__title {
@@ -167,7 +177,7 @@ main {
     display: block;
 }
 
-.box__button--primario {
+.box__button {
     margin-top: 9px;
     width: 224px;
     height: 33px;
@@ -177,36 +187,17 @@ main {
     color: $color-claro;
     border: none;
     border-radius: 16px;
-    background-color: $color-primario;
     box-shadow: 0 4px 4px 0 rgba(33, 33, 33, .3);
-}
-
-.box__button--secundario {
-    margin-top: 9px;
-    width: 224px;
-    height: 33px;
-    font-size: .7rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: $color-claro;
-    border: none;
-    border-radius: 16px;
-    background-color: $color-secundario;
-    box-shadow: 0 4px 4px 0 rgba(33, 33, 33, .3);
-}
-
-.box__button--terciario {
-    margin-top: 9px;
-    width: 224px;
-    height: 33px;
-    font-size: .7rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: $color-claro;
-    border: none;
-    border-radius: 16px;
-    background-color: $color-terciario;
-    box-shadow: 0 4px 4px 0 rgba(33, 33, 33, .3);
+    cursor: pointer;
+    &--primario {
+        background-color: $color-primario;
+    }
+    &--secundario {
+        background-color: $color-secundario;
+    }
+    &--terciario {
+        background-color: $color-terciario;
+    }
 }
 
 .resultado__text {
