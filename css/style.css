@@ -65,11 +65,19 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.boxs-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .box {
@@ -176,7 +184,7 @@ main {
   padding-left: 10px;
   width: 224px;
   height: 33px;
-  font-size: 0.8rem;
+  font-size: .8rem;
   border: 1px solid rgba(33, 33, 33, 0.3);
   border-radius: 16px;
   -webkit-box-shadow: 0 4px 4px 0 rgba(33, 33, 33, 0.3);
@@ -229,7 +237,7 @@ main {
   margin-top: 9px;
   width: 224px;
   height: 33px;
-  font-size: 0.7rem;
+  font-size: .7rem;
   font-weight: 600;
   text-transform: uppercase;
   color: #fff;
@@ -239,12 +247,15 @@ main {
           box-shadow: 0 4px 4px 0 rgba(33, 33, 33, 0.3);
   cursor: pointer;
 }
+
 .box__button--primario {
   background-color: #0047F7;
 }
+
 .box__button--secundario {
   background-color: #FD00B0;
 }
+
 .box__button--terciario {
   background-color: #0EAEC8;
 }
@@ -293,3 +304,4 @@ footer p strong a {
   text-decoration: none;
   color: #000;
 }
+/*# sourceMappingURL=style.css.map */

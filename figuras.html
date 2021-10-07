@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometry Crack</title>
+    <link rel="shortcut icon" href="images/logo.png" type="png">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 768px)"/>
     <link rel="stylesheet" href="./css/laptop.css" media="screen and (min-width: 1024px)"/>
@@ -16,68 +17,70 @@
         <p>Tu aliado geométrico</p>
     </header>
     <main>
-    <section class="box">
-        <h2 class="box__title">Cuadrado</h2>
-        <p class="box__description">Calcula las medidas de un cuadrado</p>
-        <img class="box__image" src="./images/cuadrado.png" alt="cuadrado blanco">
-        <h3 class="box__subtitle">Área y perímetro</h3>
-        <label class="box__label" for="InputCuadrado">
-            <p>Ingresa el tamaño de uno de los lados del cuadrado:</p>
-        </label>
-        <div class="tamaño">
-            <input placeholder="Tamaño de un lado..." class="box__input box__input--medida" type="number" id="InputCuadrado">
-            <div class="medida__container">
-                <select class="medida" name="size" id="InputMedidaCuadrado">
-                    <option class="medida__option" value="mm">mm</option>
-                    <option class="medida__option" value="cm">cm</option>
-                    <option class="medida__option" value="m">m</option>
-                </select>
-                <label for="InputMedidaCuadrado">
-                    <img class="medida__flecha" src="./icons/arrow-down.png" alt="">
+        <div class="boxs-container">
+            <section class="box">
+                <h2 class="box__title">Cuadrado</h2>
+                <p class="box__description">Calcula las medidas de un cuadrado</p>
+                <img class="box__image" src="./images/cuadrado.png" alt="cuadrado blanco">
+                <h3 class="box__subtitle">Área y perímetro</h3>
+                <label class="box__label" for="InputCuadrado">
+                    <p>Ingresa el tamaño de uno de los lados del cuadrado:</p>
                 </label>
-            </div>
-        </div>
-        <button class="box__button box__button--secundario" type="button" onclick="calcularPerimetroCuadrado()">
-            Calcular perímetro
-        </button>
-        <button class="box__button box__button--terciario" type="button" onclick="calcularAreaCuadrado()">
-            Calcular área
-        </button>
-        <p class="resultado__text" id="resultadoCuadradoTexto"></p>
-        <p class="resultado" id="resultadoCuadrado"></p>
-    </section>
-    <section class="box">
-        <h2 class="box__title">Círculo</h2>
-        <p class="box__description">Calcula las medidas de un círculo</p>
-        <img class="box__image" src="./images/circulo.png" alt="circulo blanco">
-        <label class="box__label" for="circuloRadio">
-            <p>Ingresa el radio del círculo:</p>
-        </label>
-        <div class="tamaño">
-            <input placeholder="Radio..." class="box__input box__input--medida" type="number" id="circuloRadio">
-            <div class="medida__container">
-                <select class="medida" name="size" id="InputMedidaCirculo">
-                    <option class="medida__option" value="mm">mm</option>
-                    <option class="medida__option" value="cm">cm</option>
-                    <option class="medida__option" value="m">m</option>
-                </select>
-                <label for="InputMedidaCirculo">
-                    <img class="medida__flecha" src="./icons/arrow-down.png" alt="">
+                <div class="tamaño">
+                    <input placeholder="Tamaño de un lado..." class="box__input box__input--medida" type="number" id="InputCuadrado">
+                    <div class="medida__container">
+                        <select class="medida" name="size" id="InputMedidaCuadrado">
+                            <option class="medida__option" value="mm">mm</option>
+                            <option class="medida__option" value="cm">cm</option>
+                            <option class="medida__option" value="m">m</option>
+                        </select>
+                        <label for="InputMedidaCuadrado">
+                            <img class="medida__flecha" src="./icons/arrow-down.png" alt="">
+                        </label>
+                    </div>
+                </div>
+                <button class="box__button box__button--secundario" type="button" onclick="calcularPerimetroCuadrado()">
+                    Calcular perímetro
+                </button>
+                <button class="box__button box__button--terciario" type="button" onclick="calcularAreaCuadrado()">
+                    Calcular área
+                </button>
+                <p class="resultado__text" id="resultadoCuadradoTexto"></p>
+                <p class="resultado" id="resultadoCuadrado"></p>
+            </section>
+            <section class="box">
+                <h2 class="box__title">Círculo</h2>
+                <p class="box__description">Calcula las medidas de un círculo</p>
+                <img class="box__image" src="./images/circulo.png" alt="circulo blanco">
+                <label class="box__label" for="circuloRadio">
+                    <p>Ingresa el radio del círculo:</p>
                 </label>
-            </div>
+                <div class="tamaño">
+                    <input placeholder="Radio..." class="box__input box__input--medida" type="number" id="circuloRadio">
+                    <div class="medida__container">
+                        <select class="medida" name="size" id="InputMedidaCirculo">
+                            <option class="medida__option" value="mm">mm</option>
+                            <option class="medida__option" value="cm">cm</option>
+                            <option class="medida__option" value="m">m</option>
+                        </select>
+                        <label for="InputMedidaCirculo">
+                            <img class="medida__flecha" src="./icons/arrow-down.png" alt="">
+                        </label>
+                    </div>
+                </div>
+                <button class="box__button box__button--secundario" type="button" onclick="calcularDiametroCirculo()">
+                    Calcular diámetro
+                </button>
+                <button class="box__button box__button--terciario" type="button" onclick="calcularCircunferenciaCirculo()">
+                    Calcular circunferencia
+                </button>
+                <button class="box__button box__button--primario" type="button" onclick="calcularAreaCirculo()">
+                    Calcular área
+                </button>
+                <p class="resultado__text" id="resultadoCirculoTexto"></p>
+                <p class="resultado" id="resultadoCirculo"></p>
+            </section>
         </div>
-        <button class="box__button box__button--secundario" type="button" onclick="calcularDiametroCirculo()">
-            Calcular diámetro
-        </button>
-        <button class="box__button box__button--terciario" type="button" onclick="calcularCircunferenciaCirculo()">
-            Calcular circunferencia
-        </button>
-        <button class="box__button box__button--primario" type="button" onclick="calcularAreaCirculo()">
-            Calcular área
-        </button>
-        <p class="resultado__text" id="resultadoCirculoTexto"></p>
-        <p class="resultado" id="resultadoCirculo"></p>
-    </section>
     <section class="triangulos">
         <div class="box box--title">
             <h2 class="box__title">Triángulo</h2>
